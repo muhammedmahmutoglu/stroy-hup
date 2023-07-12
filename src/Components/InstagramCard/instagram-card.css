@@ -1,0 +1,100 @@
+.instagram-cards {
+  padding: 60px 5px 0px;
+  font-family: "Fira Sans", "sans-serif";
+}
+
+.instagram-icon {
+  font-size: 17px;
+  margin-right: 14px;
+}
+
+.instagram-cards-title {
+  margin-bottom: 20px;
+}
+
+.instagram-cards-title p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(41, 41, 41);
+}
+
+.instagram-items {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.instagram-image {
+  width: 33.333%;
+  display: inline-block;
+  position: relative;
+  align-items: center;
+}
+
+.instagram-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.instagram-image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 2px;
+  right: 2px;
+  background: rgb(0, 0, 0);
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.25s ease-in-out 0.2s;
+  border: none;
+}
+
+.image-background {
+  position: absolute;
+  top: 11px;
+  display: flex;
+  opacity: 0;
+  left: calc(50% - 26px);
+  transform: translate(-50%, -50%);
+  transition: all 0.25s ease-in-out 0.01s;
+  z-index: 6;
+}
+
+.image-bacground-animasyon {
+  left: calc(50% + 26px);
+  transition: all 0.25s ease-in-out 0.05s;
+}
+
+.image-background-icon {
+  font-size: 20px;
+  margin: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.instagram-image:hover::after {
+  opacity: 0.35;
+}
+
+.instagram-image:hover .image-background {
+  top: 50%;
+  opacity: 1;
+}
+
+.instagram-image:nth-child(n + 4) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .instagram-image {
+    width: 18.4%;
+  }
+
+  .instagram-image:nth-child(n + 4) {
+    display: inline-block;
+  }
+}

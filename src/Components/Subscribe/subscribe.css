@@ -1,0 +1,143 @@
+.subscribes {
+  font-family: "Fira Sans", "sans-serif";
+  background-image: url(../../Assets/Img/newsletter-bg.jpg);
+  width: calc(100% - 50px);
+  margin: 60px auto 0px;
+  padding: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  background-position: center center;
+}
+
+.subscribe-contents {
+  background-color: white;
+  height: 100%;
+  border-radius: 3px;
+  padding: 30px;
+  text-align: center;
+}
+
+.subscribe-contents h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.subscribe-contents p {
+  font-size: 13px;
+  line-height: 2;
+  margin-bottom: 58px;
+}
+
+.subscribes-mail input {
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(41, 41, 41);
+  font-size: 15px;
+  outline: none;
+}
+
+.subscribes-mail input::placeholder {
+  color: #414141;
+  padding-left: 13px;
+  font-family: "Fira Sans", "sans-serif";
+}
+
+.subscribes-mail button {
+  width: 100%;
+  height: 42px;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+  font-family: "Fira Sans", "sans-serif";
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .subscribes {
+    width: calc(100% - 90px);
+    margin-top: 90px;
+    padding: 25px;
+  }
+
+  .subscribe-contents {
+    padding: 50px 40px;
+  }
+
+  .subscribe-contents p {
+    font-size: 14px;
+  }
+
+  .subscribe-contents h1 {
+    font-size: 21px;
+  }
+
+  .subscribes-mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subscribes-mail button {
+    height: 44px;
+    width: auto;
+    padding: 0 31px;
+  }
+
+  .subscribes-mail input {
+    margin: 0 15px 0 0;
+    max-width: 425px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .subscribes {
+    width: 900px;
+    padding: 30px;
+    margin: 120px auto 0;
+  }
+  .subscribe-contents {
+    padding: 61px 50px;
+  }
+
+  .subscribe-contents h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-contents p {
+    font-size: 14px;
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribes {
+    width: 1050px;
+  }
+
+  .subscribe-contents {
+    padding: 90px;
+  }
+
+  
+}
+
+@media (min-width: 1440px) {
+  .subscribes {
+    width: 1170px;
+  }
+  .subscribe-contents h1 {
+    font-size: 30px;
+  }
+
+  .subscribe-contents p {
+    font-size: 15px;
+  }
+}

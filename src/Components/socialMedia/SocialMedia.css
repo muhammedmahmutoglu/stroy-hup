@@ -1,0 +1,14 @@
+.icons {
+    text-align: center;
+}
+
+.icon {
+    font-size: 20px;
+    color: rgb(41, 41, 41);
+    margin: 6px 16px;
+}
+
+.icons .subscribes {
+    
+    padding-top: 100px;
+}

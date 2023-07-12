@@ -1,0 +1,125 @@
+.header {
+  font-family: "Fira Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 51.67px;
+  padding: 15px;
+  background-color: white;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  z-index: 9;
+}
+
+.errorpages {
+  position: static;
+}
+
+.header-components {
+  display: none;
+}
+
+.header-menu {
+  margin-top: 5px;
+}
+
+.header span {
+ 
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: rgb(41, 41, 41);
+  margin-bottom: 5px;
+}
+
+.header-menu :nth-child(2) {
+  margin-top: 5px;
+}
+
+.header-menu :last-child {
+  width: 20px;
+}
+
+.header-logo {
+  height: 18.72px;
+  width: 90px;
+  margin-right: 12px;
+}
+
+.search-logo {
+  margin-right: 4px;
+  width: 17px;
+}
+
+.active {
+  color: black !important;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 75.67px;
+    padding: 15px 25px;
+  }
+
+  .header a {
+    margin-top: 3px;
+  }
+
+  .header-logo {
+    height: 31px;
+    width: 149px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 25px 45px;
+    height: 83.67px;
+    transition: all 0.25s ease-in-out 0.2s;
+  }
+
+  .header-scroll{
+    height: 75.67px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.25s ease-in-out 0.2s;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-contents {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .header-components {
+    display: flex;
+    margin-right: 27px;
+    flex-grow: 1;
+  
+  }
+  .header-components .header-link {
+    margin: 0px 30px ;
+    font-size: 15px;
+    line-height: 1;
+    color: rgb(117, 117, 117);
+    text-decoration: none;
+  }
+
+  .header-active {
+    color: black !important;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding: 25px 75px;
+    height: 93.67px;
+  }
+}
